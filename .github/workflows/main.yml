@@ -11,6 +11,6 @@ jobs:
       - uses: testomatio/check-tests@master
         with:
           framework: jest
-          tests: tests/**.spec.js
+          tests: packages/**/__test__/**.spec.js
           token: ${{ secrets.GITHUB_TOKEN }}
           has-tests-label: true
